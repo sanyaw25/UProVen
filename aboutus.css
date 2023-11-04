@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('file:///C:/Users/sanya/OneDrive/Pictures/Screenshots/entrepreneur.jpg.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+#back-home-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
