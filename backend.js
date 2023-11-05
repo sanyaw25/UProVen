@@ -33,7 +33,7 @@ class User(db.Model):
 def home():
     return render_template('index.html')
 
-@app.route("/contact",methods=['GET','POST'])
+@app.route("/contactus",methods=['GET','POST'])
 def contact_view():
     if(request.method=='POST'):
         name = request.form.get('name')
@@ -106,21 +106,21 @@ def signup():
 
 
 
-@app.route('/top')
+@app.route('/topprj')
 def top():
     return render_template('top.html')
 
-@app.route('/dashboard',methods=['GET', 'POST'])
+@app.route('/feedpage',methods=['GET', 'POST'])
 def dashboard():
     user_info = session.get('user_info')
 
     return render_template('Dashboard.html', user_info=user_info)
 
-@app.route('/faq')
+@app.route('/faqs')
 def faq():
     return render_template('faq.html')
 
-@app.route('/noti')
+@app.route('/notifs')
 def noti():
     return render_template('noti.html')
 
