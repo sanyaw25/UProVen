@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Sidebar HTML and CSS| CodingNepal</title>
+    <!-- Linking Google font link for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='test home.css') }}" >
+  </head>
+  <body>
+    <a href="search.html"></a>
+    <a href="/login"><button class="btnLogin-popup">Login</button></a>
+    <nav class="navigation">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="{{url_for('static', filename='logo.jpeg')}}" alt="logo">
+        <h2>UPROVen</h2>
+      </div>
+      <ul class="links">
+        <h4>Main Menu</h4>
+        <li>
+          <span class="material-symbols-outlined">dashboard</span>
+          <a href="/feedpage">Dashboard</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">show_chart</span>
+          <a href="/post">Post</a>
+        </li>
+        <hr>
+        <h4>Advanced</h4>
+        <li>
+          <span class="material-symbols-outlined">person</span>
+          <a href="/topprj">Top Projects Of The Week</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">group</span>
+          <a href="/contactus">Contact Us </a>
+        </li>
+        <hr>
+        <h4>Account</h4>
+        <li>
+          <span class="material-symbols-outlined">bar_chart</span>
+          <a href="/notifs">Notification</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">bar_chart</span>
+          <a href="/faqs">Faq's</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">mail</span>
+          <a href="#">Message</a>
+        </li>
+          <a href="/login"><button class="btnLogin-popup">Login</button></a>
+      </ul>
+    </aside>
+  </nav>
+  <div class="container">
+   <div class="main-content">
+     
+   </div>
+   <div class="right-sidebar">
+     
+   </div>
+  </div>
+  </body>
+</html>
