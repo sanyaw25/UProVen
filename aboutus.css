@@ -1,11 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('file:///C:/Users/sanya/OneDrive/Pictures/Screenshots/entrepreneur.jpg.png'); /* Replace with your background image URL */
+    background-image: url('https://blog.intercomassets.com/blog/wp-content/uploads/2029/08/BlogHero_1968X921px-2-1800x840.jpg.optimal.jpg');
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif, 'Arial', sans-serif; /* Change the font-family to 'Playfair Display' */
     color: #fff;
+    text-align: right; /* Align all text to the right */
 }
 
 header {
@@ -21,21 +22,34 @@ header {
 
 main {
     padding: 20px;
-    text-align: center;
+    text-align: right; /* Align text in the main section to the right */
 }
 
 .about-us {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
+    display: inline-block; /* Display the box as an inline block */
+    text-align: right; /* Align text within the box to the right */
+    max-width: 70%; /* Limit the maximum width of the box */
+    margin: 0 auto; /* Center the box horizontally */
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 54px;
     margin: 0;
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif, 'Georgia', serif; /* Change the font-family for h1 to 'Playfair Display' */
 }
 
 p {
-    font-size: 18px;
+    font-size: 28px; /* Decrease the font size */
     margin: 20px 0;
+    font-family: 'Playfair Display', serif, 'Times New Roman', serif; /* Change the font-family for the paragraph to 'Playfair Display' */
+    text-align: left; /* Align the paragraph to the left */
 }
+
+.about-us h1 {
+    font-weight: bold; /* Make the "About Me" title bold */
+}
+

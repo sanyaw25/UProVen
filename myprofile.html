@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ddd;
+        align-items: center;
+        justify-content: center;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+    }
+
+    .box{
+        flex: 30%;
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        background-color: #0d1425;
+        color: #fff;
+        padding: 30px 30px;
+        border-radius: 20px;
+    }
+
+    .box img{
+        border-radius: 50%;
+        border: 2px solid #fff;
+        height: 250px;
+        width: 250px;
+    }
+
+    .box ul{
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .box ul li{
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 100;
+    }
+
+    .box ul li i{
+        cursor: pointer;
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    .box ul li i:hover{
+        opacity: 0.6;
+    }
+
+    .About{
+        margin-left: 20px;
+        flex: 50%;
+        display: table;
+        padding: 30px 30px;
+        font-size: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    .About h1{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .About ul li{
+        list-style: none;
+    }
+
+    .About ul{
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 1068px) {
+        .container{
+            display: table;
+        }
+
+        .box{
+            width: 100%;
+        }
+
+        .About{
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .About h1{
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg" alt="img not available">
+            <ul>
+                <li>Robert Downey Jr.</li>
+                <li>50 years</li>
+                <li>Actor</li>
+                <li><i style="font-size:24px" class="fa"></i>
+                    <i style="font-size:24px" class="fa"></i>
+                    <i style="font-size:24px" class="fa"></i></li>
+            </ul>
+        </div>
+        <div class="About">
+            <ul>
+                <h1>about</h1>
+            </ul>
+            <ul>
+                <h3>Work</h3>
+                <li>Actor</li>
+            </ul>
+            <ul>
+                <h3>Gender</h3>
+                <li>male</li>
+            </ul>
+            <ul>
+                <h3>Country</h3>
+                <li>USA</li>
+            </ul>
+            <ul>
+                <h3>More Info</h3>
+                <p>I am Iron man. I secretly work as a python programmer in an underground arena for coders. My best friends are Hulk and Thor and I just love them 3000 just like I love coding. The heart that is inside my chest actually comprises  of codes that shine using some technology that hasn't been invented yet. My armour doesn't use nanobots, it uses codes to operate. This is why everyone should become a coder.</p>
+            </ul>
+            <ul>
+                <h3>Contact</h3>
+                <li>example@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Change font to something classy */
+            background-color: #add8e6; /* Change background color to light blue */
+            margin: 10px 0 0; /* Add space at the top and reduce margin */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Set the body height to the viewport height */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; /* Change to a row layout */
+            max-width: 800px; /* Increase the max-width for larger boxes */
+            width: 100%; /* Ensure the boxes take up the full width */
+        }
+
+        .notification-box {
+            flex: 1;
+            padding: 20px; /* Increase padding for larger boxes */
+            border: 2px solid #ccc; /* Increase border thickness */
+            border-radius: 10px; /* Increase border radius */
+            margin: 5px 10px; /* Increase margin for spacing and shift up slightly */
+            background-color: #fff; /* Section background color */
+        }
+
+        .notification-box h3 {
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 2px solid #ccc; /* Increase underline thickness */
+            font-family: 'Times New Roman', serif; /* Change font */
+            font-weight: bold; /* Bold the font */
+            font-size: 20px; /* Increase font size */
+        }
+
+        .notification-item {
+            padding: 15px; /* Increase padding for the notifications */
+            border-bottom: 2px solid #ccc; /* Increase underline thickness */
+            font-family: 'Times New Roman', serif; /* Change font for the notifications */
+            font-weight: bold; /* Bolden the notifications */
+            font-size: 18px; /* Increase font size */
+        }
+
+        .notification-item:last-child {
+            border-bottom: none;
+        }
+
+        .unread {
+            background: #ffcccb;
+        }
+
+        .read {
+            background: #e0e0e0;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none; /* Remove underline from the arrow */
+        }
+
+        .notification-header {
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #ccc; /* Increase border thickness */
+            border-radius: 10px; /* Increase border radius */
+            padding: 10px; /* Increase padding for the headers */
+            margin-bottom: 10px; /* Reduce margin */
+            font-family: 'Times New Roman', serif; /* Change font for the headers */
+            font-weight: bold; /* Bold the font */
+            font-size: 24px; /* Increase font size for the headers */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="back-link">&#8592;</a>
+    <div class="container">
+        <div class="notification-box">
+            <div class="notification-header">Unread Notifications</div>
+            <div class="notification-item unread">
+                You have a new message from John.
+            </div>
+            <div class="notification-item unread">
+                5 new upvotes on your post.
+            </div>
+            <div class="notification-item unread">
+                2 unread comments on your post.
+            </div>
+        </div>
+        <div class="notification-box">
+            <div class="notification-header">Read Notifications</div>
+            <div class="notification-item read">
+                You have 3 unread messages.
+            </div>
+            <div class="notification-item read">
+                Your post has received 10 upvotes.
+            </div>
+            <div class="notification-item read">
+                5 comments on your post.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

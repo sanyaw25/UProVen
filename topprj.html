@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Projects of the Week</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .banner {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 400px;
+            display: none;
+            position: absolute;
+        }
+
+        .bottom-title {
+            background-color: #333;
+            color: #fff;
+            font-family: 'Pacifico', cursive, 'Arial', sans-serif;
+            font-size: 36px;
+            padding: 20px;
+            text-decoration: underline;
+        }
+
+        .bottom-text {
+            background-color: #333;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://www.akc.org/wp-content/uploads/2018/08/border-collie-puppy-sweet-near-shoe.jpg" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_WhLJgxZEoea82jwiba8hOYnY1o1fuigxw&usqp=CAU" alt="Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjn5ibt116KH58i5X4Wvam2uLylnkLiV-Wmg&usqp=CAU" alt="Image 3">
+    </div>
+
+    <div class="bottom-title">
+        <p>Top Projects of the Week</p>
+    </div>
+    
+    <div class="bottom-text">
+        <p>Reach more upvotes and get a chance to be featured amongst the top project holders for the week</p>
+    </div>
+
+    <script>
+        let currentImage = 0;
+        const images = document.querySelectorAll(".banner img");
+
+        function nextImage() {
+            images[currentImage].style.display = "none";
+            currentImage = (currentImage + 1) % images.length;
+            images[currentImage].style.display = "block";
+        }
+
+        // Initial call to start rotation
+        nextImage();
+
+        // Rotate images every 4 seconds
+        setInterval(nextImage, 4000);
+    </script>
+</body>
+</html>
