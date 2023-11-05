@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue; /* Change to light purple */
+        }
+
+        .banner {
+            background-color: #4b0082; /* Change the color of the banner */
+            color: #fff;
+            padding: 10px; /* Add padding for spacing */
+            text-align: center; /* Center the text */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Georgia', 'Times New Roman', serif; /* Change to a classy font */
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            font-family: 'Helvetica', 'Arial', sans-serif; /* Change the font for questions */
+            cursor: pointer;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .answer.open {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+    </div>
+
+    <div class="container">
+        <div class="faq-item">
+            <div class="question">What is HTML?</div>
+            <div class="answer">
+                <p>
+                    HTML (Hypertext Markup Language) is the standard markup language for documents designed to be displayed in a web browser.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is CSS?</div>
+            <div class="answer">
+                <p>
+                    CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How can I learn web development?</div>
+            <div class="answer">
+                <p>
+                    There are many online resources and courses available to learn web development. You can start by learning HTML, CSS, and JavaScript.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Add more FAQ items -->
+        <div class="faq-item">
+            <div class="question">What is JavaScript?</div>
+            <div class="answer">
+                <p>
+                    JavaScript is a high-level, interpreted programming language used to make web pages interactive. It allows for client-side scripting and is essential for modern web development.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is responsive web design?</div>
+            <div class="answer">
+                <p>
+                    Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How can I optimize website performance?</div>
+            <div class="answer">
+                <p>
+                    You can optimize website performance by minimizing HTTP requests, using efficient coding practices, optimizing images, and leveraging browser caching, among other techniques.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
